@@ -14,6 +14,7 @@ import boto.utils
 def myLog(message, toSyslog=False):
 	procName = __file__
 	print '%s' % message
+	sys.stdout.flush()
 		
 	if toSyslog:
 		syslogMsg = procName + ": " + message
