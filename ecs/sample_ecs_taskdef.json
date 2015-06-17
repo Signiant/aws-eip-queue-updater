@@ -1,0 +1,32 @@
+{
+  "family": "aws-sqs-utilities",
+  "containerDefinitions": [
+    {
+      "name": "aws-sqs-keep-alive",
+      "image": "signiant/aws-sqs-keep-alive:latest",
+      "cpu": 10,
+      "memory": 100,
+      "entryPoint": [],
+      "environment": [
+        {
+          "name": "SQS_NAME_PATTERN",
+          "value": "EIPQueue"
+        },
+        {
+          "name": "FREQUENCY",
+          "value": "86400"
+        },
+		{
+          "name": "EXCLUDE_REGIONS",
+          "value": "cn-north-1,us-gov-west-1"
+        }
+      ],
+      "command": [],
+      "portMappings": [],
+      "volumesFrom": [],
+      "links": [],
+      "mountPoints": [],
+      "essential": true
+    },
+  "volumes": []
+}

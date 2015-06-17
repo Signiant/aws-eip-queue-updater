@@ -8,10 +8,10 @@ This task then checks for SQS queues matching a pattern and will read the single
 
 ## Variables
 
-VERBOSE - enable more logging.  Default: False
-FREQUENCY - How often to check the SQS queues (in seconds).  Default: 86400
-SQS_NAME_PATTERN - Process queues with this pattern in their name.  Default: EIPQueue
-EXCLUDE_REGIONS - Comma seperated list of SQS regions to ignore.  Default: cn-north-1,us-gov-west-1
+- VERBOSE - enable more logging.  Default: False
+- FREQUENCY - How often to check the SQS queues (in seconds).  Default: 86400
+- SQS_NAME_PATTERN - Process queues with this pattern in their name.  Default: EIPQueue
+- EXCLUDE_REGIONS - Comma seperated list of SQS regions to ignore.  Default: cn-north-1,us-gov-west-1
 
 ## Example Docker run
 
